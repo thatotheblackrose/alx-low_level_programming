@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*8
+/*
  *
  * Return - Entry point 
  *
