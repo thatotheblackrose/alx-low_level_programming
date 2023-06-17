@@ -12,8 +12,8 @@ int main(void)
 int lowerCase = 'a';
 while (lowerCase <= 'z')
 {
- putchar(lowerCase);
- lowerCase += 1;
+putchar(lowerCase);
+lowerCase += 1;
 }
 printf("\n");
 
