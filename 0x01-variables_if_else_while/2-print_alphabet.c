@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <ctype.h>
+
 /**
  * main - Entry
  *
  * Return: Always 0 (success)
  */
+
 int main(void)
 {
 	int lowerCase = 'a';
