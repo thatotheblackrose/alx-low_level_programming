@@ -8,16 +8,17 @@
  */
 
 int main(void)
-
 {
-	int lowerCase = 'a';
-	while (lowerCase <= 'z')
+    int lowerCase = 'a';
 
-	{
-		putchar(lowerCase);
-		lowerCase += 1;
-	}
-	printf("\n");
+    while (lowerCase <= 'z')
+    {
+        putchar(lowerCase);
+        lowerCase += 1;
+    }
 
-	return (0);
+    printf("\n");
+
+    return 0;
 }
+
