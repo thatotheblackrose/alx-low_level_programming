@@ -9,16 +9,14 @@
 
 int main(void)
 {
-    int lowerCase = 'a';
+int lowerCase = 'a';
+while (lowerCase <= 'z')
+{
+putchar(lowerCase);
+lowerCase += 1;
+}
+putchar('\n');
 
-    while (lowerCase <= 'z')
-    {
-        putchar(lowerCase);
-        lowerCase += 1;
-    }
-
-    printf("\n");
-
-    return 0;
+return 0;
 }
 
