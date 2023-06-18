@@ -22,7 +22,7 @@ putchar(j);
 
 if (i == '8' && j == '9')
 {
-putchar('\n'); 
+putchar('\n');
 }
 else
 {
@@ -33,8 +33,9 @@ putchar(' ');
 j++;
 }
 j = '0';
-i++;
+i++; 
 }
 
 return (0);
 }
+
