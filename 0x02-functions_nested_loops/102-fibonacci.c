@@ -6,22 +6,25 @@
  * Return: always 0.
  */
 
-int main(void)
-
+void fibonacci(int n)
 {
-	int count;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+    int fib_list[n];
+    fib_list[0] = 1;
+    fib_list[1] = 2;
 
-	for (count = 0; count < 50; count++)
-	{
-	sum = fib1 + fib2;
-	printf("%1u", sum);
-	fib1 = fib2;
-        fib2 = sum;
-	if (count == 49)
-	printf("\n");
-	else
-	printf(", ");
-	}
-	Return (0);
+    printf("%d, %d", fib_list[0], fib_list[1]);
+
+    for (int i = 2; i < n; i++)
+    {
+        fib_list[i] = fib_list[i - 1] + fib_list[i - 2];
+        printf(", %d", fib_list[i]);
+    }
+    printf("\n");
+}
+
+int main()
+{
+    fibonacci(50);
+
+    return 0;
 }
