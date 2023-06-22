@@ -4,15 +4,16 @@ int fibonacci_sum(int limit) {
     int a = 1;
     int b = 2;
     int sum_even = 0;
+    int temp;
 
     while (a <= limit) {
-        // Check if the current term is even
+        /* Check if the current term is even */
         if (a % 2 == 0) {
             sum_even += a;
         }
 
-        // Generate the next Fibonacci term
-        int temp = a;
+        /* Generate the next Fibonacci term */
+        temp = a;
         a = b;
         b = temp + b;
     }
