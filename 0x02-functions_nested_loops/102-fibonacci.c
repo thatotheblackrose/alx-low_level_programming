@@ -28,6 +28,6 @@ int main(void)
 {
 fibonacci(50);
 
-return 0;
+return (0);
 }
 
