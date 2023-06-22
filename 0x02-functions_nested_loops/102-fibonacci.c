@@ -8,13 +8,14 @@
 
 void fibonacci(int n)
 {
-    int fib_list[n];
+    int fib_list[50];
     fib_list[0] = 1;
     fib_list[1] = 2;
 
     printf("%d, %d", fib_list[0], fib_list[1]);
 
-    for (int i = 2; i < n; i++)
+    int i;
+    for (i = 2; i < n; i++)
     {
         fib_list[i] = fib_list[i - 1] + fib_list[i - 2];
         printf(", %d", fib_list[i]);
@@ -28,3 +29,4 @@ int main()
 
     return 0;
 }
+
