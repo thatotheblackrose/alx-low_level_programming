@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 void print_fibonacci(int n) {
-    int a = 1, b = 2;
+    unsigned long long a = 1, b = 2; // Use unsigned long long to support larger numbers
     int i;
 
-    printf("%d, %d, ", a, b);
+    printf("%llu, %llu, ", a, b);
 
     for (i = 3; i <= n; i++) {
-        int next = a + b;
-        printf("%d", next);
+        unsigned long long next = a + b;
+        printf("%llu", next);
 
         if (i != n)
             printf(", ");
@@ -20,7 +20,7 @@ void print_fibonacci(int n) {
     printf("\n");
 }
 
-int main() {
+int main(void) {
     int n = 98;
     print_fibonacci(n);
 
