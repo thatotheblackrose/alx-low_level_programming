@@ -8,18 +8,18 @@
 
 void fibonacci(int n)
 {
-    long long fib_list[50];
+    unsigned long fib_list[50];
     int i;
 
     fib_list[0] = 1;
     fib_list[1] = 2;
 
-    printf("%lld, %lld", fib_list[0], fib_list[1]);
+    printf("%lu, %lu", fib_list[0], fib_list[1]);
 
     for (i = 2; i < n; i++)
     {
         fib_list[i] = fib_list[i - 1] + fib_list[i - 2];
-        printf(", %lld", fib_list[i]);
+        printf(", %lu", fib_list[i]);
     }
     printf("\n");
 }
@@ -30,5 +30,4 @@ int main()
 
     return 0;
 }
-
 
