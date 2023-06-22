@@ -12,7 +12,7 @@ unsigned long fib_list[50];
 int i;
 
 fib_list[0] = 1;
-ib_list[1] = 2;
+fib_list[1] = 2;
 
 printf("%lu, %lu", fib_list[0], fib_list[1]);
 
